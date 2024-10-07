@@ -1,0 +1,141 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --font: 'poppins';
+
+    --tw-bold:600;
+    --tw-medium:400;
+    --tw-light:200;
+
+    --fs-400:1.5rem;
+    --fs-600:2.5rem;
+    --fs-200:0.9rem;
+
+
+    --Dark-Blue: hsl(234, 12%, 34%);
+    --Grayish-Blue: hsl(229, 6%, 66%) ;
+    --Light-Gray: hsl(0, 0%, 98%);
+
+    --card-Red: hsl(0, 78%, 62%);
+    --card-Cyan: hsl(180, 62%, 55%);
+    --card-Orange: hsl(34, 97%, 64%);
+    --card-Blue: hsl(212, 86%, 64%);
+
+
+}
+
+html{
+    font-family: var(--font);
+    background-color: var(--Light-Gray);
+   margin-block-end: 5rem;
+}
+
+.wrapper{
+    max-width: 1100px;
+    margin-inline: auto;
+   
+}
+header{
+    text-align: center;
+    margin-block: 4rem;
+}
+.text-container{
+    max-width: 550px;
+    
+}
+
+h1{
+    font-size: var(--fs-600);
+color: var(--Dark-Blue);
+}
+span{
+    font-weight: var(--tw-light);
+}
+header p{
+    font-weight: var(--tw-light);
+    color: var(--Grayish-Blue);
+    margin-top: 1em;
+}
+
+.main-flex{
+    display: flex;
+    gap: 2rem;
+    align-items: center
+    
+}
+
+.col{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    flex: 1;   
+}
+.card{
+    background-color: #ffff;
+    padding: 2em;
+    border-radius: .5em;
+    border-top: 5px solid;
+    box-shadow: 0 1rem 1.5rem -0.5rem rgb(0 50 100/ 0.1);
+}
+h2{
+    font-size: var(--fs-400);
+    color: var(--Dark-Blue);
+}
+.card-para{
+    font-size: .8rem;
+    color: var(--Grayish-Blue);
+    margin-block: .51em;
+    line-height: 1.5rem;
+    
+}
+
+
+.card img {
+margin-top: 2em;
+display: block;
+margin-left: auto;
+}
+
+.Supervisor{
+    border-color: var(--card-Cyan);
+}
+.team{
+    border-color: var(--card-Red);
+}
+.karma{
+    border-color: var(--card-Orange);
+}
+.calculator{
+    border-color: var(--card-Blue);
+}
+
+
+
+@media (max-width: 800px){
+    .text-container{
+        max-width: 400px;
+        
+    }
+    h1{
+        font-size: 1.8rem;
+    color: var(--Dark-Blue);
+    }
+    span{
+        font-weight: var(--tw-light);
+    }
+    header p{
+        font-weight: var(--tw-light);
+        color: var(--Grayish-Blue);
+        margin-top: 1em;
+        font-size: 1.2rem;
+    }
+    .main-flex{
+        padding: 2rem;
+        display: grid;
+        gap: rem;
+       
+}
+}
